@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --pale-blue2: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('./images/pattern-background-desktop.svg');
+}
+
+.card {
+    /* border: 1px solid red; */
+    max-width: 1440px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 800px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.card p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.card .box {
+    display: flex;
+    width: 80%;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: var(--pale-blue2);
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.card .box .price p {
+    margin: 0;
+}
+
+.card .box a {
+    display: flex;
+    justify-items: flex-end;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.card .box a:active {
+    color: var(--desaturated-blue);
+}
+
+.card .confirm__order {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--bright-blue);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.card .cancle__order {
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+}
+
+.card .cancle__order a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card .cancle__order a:hover {
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width:576px) {
+    .card {
+        max-width: 375px;
+        height: 600px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+}
