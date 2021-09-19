@@ -106,7 +106,7 @@ body {
     font-size: 16px;
 }
 
-.card .cancle__order a:hover {
+.card .cancle__order a:active {
     color: var(--dark-blue);
 }
 
